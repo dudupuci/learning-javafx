@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.intro.controllers.PersonsController">
    <children>
-      <ComboBox onAction="#onComboBoxSelectAction" fx:id="comboBoxPerson" layoutX="55.0" layoutY="80.0" prefWidth="150.0" promptText="Select a Person" />
-      <Button onAction="#onButtonShowAllAction" fx:id="showAllButton" layoutX="300.0" layoutY="80.0" mnemonicParsing="false" text="Show All" />
+      <ComboBox fx:id="comboBoxPerson" layoutX="55.0" layoutY="80.0" onAction="#onComboBoxSelectAction" prefWidth="150.0" promptText="Select a Person" />
+      <Button fx:id="showAllButton" layoutX="300.0" layoutY="80.0" mnemonicParsing="false" onAction="#onButtonShowAllAction" text="Show All" />
    </children>
 </AnchorPane>
